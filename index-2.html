@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>《搞鬼Online》 四周年限定活動 星光Ghost STAR</title>
+
+    <meta property="og:description" content="《搞鬼Online》 四周年限定活動 星光Ghost STAR" />
+    <meta property="og:title" content="《搞鬼Online》 四周年限定活動 星光Ghost STAR" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://<?php echo $_SERVER[HTTP_HOST]; ?>/event/20200903/" />
+    <meta property="og:site_name" content="《搞鬼Online》 四周年限定活動 星光Ghost STAR- <?php echo $_SERVER[HTTP_HOST]; ?>/event/20200903/" />
+    <meta property="og:locale" content="zh_tw" />
+    <meta property="article:author" content="https://www.facebook.com/DigeamGO/" />
+    <meta property="og:image" content="https://<?php echo $_SERVER[HTTP_HOST]; ?>/event/20200903/image/fb_share.jpg" />
+    <meta name="author" content="DiGeam" />
+    <meta name="keywords" content="Digeam 掘夢網,搞鬼Online，四週年，遊戲新幹線，新幹線，MGAME，5566，5566搞鬼廣告，鬼魂Online,孫協志,王仁甫,許孟哲,王紹偉,小刀,56不能亡,搞鬼(美版),搞鬼(大陸版),韓版搞鬼,陸服搞鬼,搞鬼私服,靈遊記,大目仔,粉目仔,豬大長,馬四掌,法茹雪,狗骨頭,小賴打,雨傘標,薑絲男,多拉B夢,觸目仔,蛋幾咧,太和老君,梅花弱,蘭霉匠,鬼魂者,RPG,角色扮演,動作遊戲,東方鬼神題材,2D橫向卷軸,動作,奇幻,冒險,可愛和風百鬼夜行,楓之谷,搞鬼：寶島新樂園,搞鬼：鬼娃法樂米,搞鬼：神射咻咻咻,恨夜城,白斬姬,烏骨雞,Ghost,軍士,1111,購物,狂歡,Festa,三部曲" />
+    <meta name="Resource-type" content="Document" />
+    <link rel="icon" href="https://<?php echo $_SERVER[HTTP_HOST]; ?>/images/favicon.ico" sizes="16x16">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/p2_style.css">
+</head>
+
+<body class="no-webp">
+    
+    <div class="wrap">
+        <!-- 隊伍消費回饋-->
+        <div class="popup" id="pop-10">
+            <div class="blacklayer"></div>
+            <div class="popbg popbg-3">
+                <div class="block_title_box ">
+                    <div class="block_title">隊伍消費回饋</div>
+                </div>
+                    <div class="pop_content_box pop_box-4">
+                        <table class="table-2">
+                            <thead>
+                                <tr>
+                                    <th>累計消費額度</th>
+                                    <th>回饋道具</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>$1500</td>
+                                    <td>水晶腰帶(30日)x1</td>
+                                </tr>
+                                <tr>
+                                    <td>$4500</td>
+                                    <td>祝福隊伍石碑x2</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">$9000</td>
+                                    <td>黃鬼靈（金錢）15日x1</td>
+                                </tr>
+                                <tr>
+                                    <td>黃鬼靈（升級）15日x1</td>
+                                </tr>
+                                <tr>
+                                    <td>$15000</td>
+                                    <td>大天使包x3</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">$30000</td>
+                                    <td>秘．高級假面箱x1</td>
+                                </tr>
+                                <tr>
+                                    <td>秘．高級六角箱x1</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="5">$45000</td>
+                                    <td>強化研磨劑x1</td>
+                                </tr>
+                                <tr>
+                                    <td>合成保護咒x2</td>
+                                </tr>
+                                <tr>
+                                    <td>泰和銀櫃鑰匙x10</td>
+                                </tr>
+                                <tr>
+                                    <td>泰和金櫃鑰匙x5</td>
+                                </tr>
+                                <tr>
+                                    <td>遺物重設符x2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                <button class="close btn btn_s">關閉</button>
+            </div>
+        </div>
+        <!-- 領獎專區  -->
+        <div class="popup" id="pop-9">
+            <div class="blacklayer"></div>
+            <div class="popbg popbg-4">
+                <div class="block_title_box ">
+                    <div class="block_title">領獎專區</div>
+                </div>
+                <!-- 此處只有共享轉蛋A區可以轉為星光值  領取集轉換內容都需要系統提示二次確認!-->
+                    <div class="pop_content_box pop_box-3">
+                        <table class="table-2">
+                            <thead>
+                                <tr>
+                                    <th width="15%">獲得時間</th>
+                                    <th width="35%">道具名稱</th>
+                                    <th width="25%">獲得方式</th>
+                                    <th width="10%">領獎</th>
+                                    <th width="15%">轉為星光值</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2020/03/07</td>
+                                    <td>尚仁伺服器傳音秘笈x10</td>
+                                    <td>共享轉蛋</td>
+                                    <td><button class="btn-2 btn_s pop-btn" data-pop="pop-2">領取</button></td>
+                                    <td><button class="btn-2 btn_s" >轉為星光值</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2020/03/07</td>
+                                    <td>尚仁伺服器傳音秘笈x10</td>
+                                    <td>共享轉蛋</td>
+                                    <td><button class="btn-2 btn_s pop-btn" data-pop="pop-2">領取</button></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>2020/03/07</td>
+                                    <td>尚仁伺服器傳音秘笈x10</td>
+                                    <td>閃耀之魂兌換</td>
+                                    <td><button class="btn-2 btn_s pop-btn" data-pop="pop-2">領取</button></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>2020/03/07</td>
+                                    <td>尚仁伺服器傳音秘笈x10</td>
+                                    <td>消費回饋</td>
+                                    <td><button class="btn-2 btn_s pop-btn" data-pop="pop-2">領取</button></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>2020/03/07</td>
+                                    <td>尚仁伺服器傳音秘笈x10</td>
+                                    <td>消費回饋</td>
+                                    <td><button class="btn-2 btn_s btn_used">已領取</button></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>2020/03/07</td>
+                                    <td>尚仁伺服器傳音秘笈x10</td>
+                                    <td>共享轉蛋</td>
+                                    <td><button class="btn-2 btn_s btn_used">領取</button></td>
+                                    <td><button class="btn-2 btn_s btn_used">已轉換</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                <button class="close btn btn_s">關閉</button>
+            </div>
+        </div>
+        <!-- 滿魂兌換-->
+        <div class="popup" id="pop-8">
+            <div class="blacklayer"></div>
+            <div class="popbg popbg-3">
+                <div class="block_title_box ">
+                    <div class="block_title">閃耀之魂兌換</div>
+                </div>
+                    <div class="pop_content_box pop_box-2">
+                        <table class="table-2">
+                            <thead>
+                                <tr>
+                                    <th>道具名稱</th>
+                                    <th>兌換次數</th>
+                                    <th>兌換</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="icon_box">
+                                            <picture>
+                                                <source src="imgp/icon/icon8-1.webp" type="image/webp" >
+                                                <img src="img/icon/icon8-1.png" alt="">
+                                            </picture>
+                                            <p>聖 虎靈x1</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        0/1
+                                    </td>
+                                    <td><button class="btn btn_s">兌換</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="icon_box">
+                                            <picture>
+                                                <source src="imgp/icon/icon8-2.webp" type="image/webp" >
+                                                <img src="img/icon/icon8-2.png" alt="">
+                                            </picture>
+                                            <p>上級研磨劑x1</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        0/2
+                                    </td>
+                                    <td><button class="btn btn_s btn_used">已兌換完畢</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="icon_box">
+                                            <picture>
+                                                <source src="imgp/icon/icon8-3.webp" type="image/webp" >
+                                                <img src="img/icon/icon8-3.png" alt="">
+                                            </picture>
+                                            <p>煉武幸運符5x1</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        0/2
+                                    </td>
+                                    <td><button class="btn btn_s">兌換</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="icon_box">
+                                            <picture>
+                                                <source src="imgp/icon/icon8-4.webp" type="image/webp" >
+                                                <img src="img/icon/icon8-4.png" alt="">
+                                            </picture>
+                                            <p>煉衣幸運符5x1</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        0/2
+                                    </td>
+                                    <td><button class="btn btn_s">兌換</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="icon_box">
+                                            <picture>
+                                                <source src="imgp/icon/icon8-5.webp" type="image/webp" >
+                                                <img src="img/icon/icon8-5.png" alt="">
+                                            </picture>
+                                            <p>煉武幸運符4x1</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        0/5
+                                    </td>
+                                    <td><button class="btn btn_s">兌換</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="icon_box">
+                                            <picture>
+                                                <source src="imgp/icon/icon8-6.webp" type="image/webp" >
+                                                <img src="img/icon/icon8-6.png" alt="">
+                                            </picture>
+                                            <p>煉衣幸運符4x1</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        0/5
+                                    </td>
+                                    <td><button class="btn btn_s">兌換</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="icon_box">
+                                            <picture>
+                                                <source src="imgp/icon/icon8-7.webp" type="image/webp" >
+                                                <img src="img/icon/icon8-7.png" alt="">
+                                            </picture>
+                                            <p>強化研磨劑x1</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        0/10
+                                    </td>
+                                    <td><button class="btn btn_s">兌換</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="icon_box">
+                                            <picture>
+                                                <source src="imgp/icon/icon8-8.webp" type="image/webp" >
+                                                <img src="img/icon/icon8-8.png" alt="">
+                                            </picture>
+                                            <p>合成保護咒x1</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        0/10
+                                    </td>
+                                    <td><button class="btn btn_s">兌換</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="icon_box">
+                                            <picture>
+                                                <source src="imgp/icon/icon8-9.webp" type="image/webp" >
+                                                <img src="img/icon/icon8-9.png" alt="">
+                                            </picture>
+                                            <p>武器強合符x1</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        0/10
+                                    </td>
+                                    <td><button class="btn btn_s">兌換</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="icon_box">
+                                            <picture>
+                                                <source src="imgp/icon/icon8-10.webp" type="image/webp" >
+                                                <img src="img/icon/icon8-10.png" alt="">
+                                            </picture>
+                                            <p>遺物重設符x1</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        0/10
+                                    </td>
+                                    <td><button class="btn btn_s">兌換</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                <button class="close btn btn_s">關閉</button>
+            </div>
+        </div>
+        <!-- 獲得物品跳窗 -->
+        <div class="popup" id="pop-7">
+            <div class="blacklayer"></div>
+            <div class="popbg">
+                <div class="block_title_box">
+                    <div class="block_title">恭喜獲得</div>
+                </div>
+                <div class="pop_content_box">
+                    <p>道具名稱X10</p>
+                    <p>道具名稱X10</p>
+                    <p>道具名稱X10</p>
+                    <p>道具名稱X10</p>
+                    <p>道具名稱X10</p>
+                    <p>道具名稱X10</p>
+                    <p>道具名稱X10</p>
+                    <p>道具名稱X10</p>
+                    <p>道具名稱X10</p>
+                    <p>道具名稱X10</p>
+                </div>
+                <button class="close btn btn_s draw_close">確認</button>
+            </div>
+        </div>
+        <!-- 確認扭蛋跳窗 -->
+        <div class="popup" id="pop-6">
+            <div class="blacklayer"></div>
+            <div class="popbg popbg-1">
+                <div class="pop_content_box">
+                    <p>確定進行共享轉蛋<br>1/10次？</p>
+                </div>
+                <div class="pop_btn_box">
+                    <!-- 點擊確認後出現抽中的物品跳窗 -->
+                    <button class="close btn btn_s draw">確定</button>
+                    <button class="close btn btn_s">取消</button>
+                </div>
+            </div>
+        </div>
+        <!-- 內容物查詢-->
+        <div class="popup" id="pop-5">
+            <div class="blacklayer"></div>
+            <div class="popbg popbg-3">
+                <div class="block_title_box ">
+                    <div class="block_title">內容物查詢</div>
+                </div>
+                <div class="myTabs">
+                    <ul class="tabs_list">
+						<li class="btn btn_s"><a href="#tab-1">A區</a></li>
+						<li class="btn btn_s"><a href="#tab-2">B區</a></li>
+					</ul>
+                    <div class="tab_container">
+                        <div class="tab_content" id="tab-1">
+                            <p class="pop_p">本區為個人獨享獎勵，可兌換為星光值</p>
+                            <div class="pop_content_box pop_box-2">
+                                <table class="table-1">
+                                    <tr>
+                                        <td width="50%">
+                                            <picture>
+                                                <source src="imgp/icon/icon5-1.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-1.jpg" alt="">
+                                            </picture>
+                                            <p>倉庫呼叫牌[10日]x1</p>
+                                        </td>
+                                        <td width="50%">
+                                            <picture>
+                                                <source src="imgp/icon/icon5-2.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-2.png" alt="">
+                                            </picture>
+                                            <p>復活符咒（5次）x1</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-3.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-3.png" alt="">
+                                            </picture>
+                                            <p>赤附身x2</p>
+                                        </td>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-4.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-4.png" alt="">
+                                            </picture>
+                                            <p>衣物強合符x1</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-5.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-5.png" alt="">
+                                            </picture>
+                                            <p>合武符x1</p>
+                                        </td>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-6.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-6.png" alt="">
+                                            </picture>
+                                            <p>合衣符x1</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-7.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-7.png" alt="">
+                                            </picture>
+                                            <p>泰和金櫃鑰匙x1</p>
+                                        </td>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-8.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-8.png" alt="">
+                                            </picture>
+                                            <p>泰和銀櫃鑰匙x1</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-9.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-9.png" alt="">
+                                            </picture>
+                                            <p>泰和銅櫃鑰匙x1</p>
+                                        </td>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-10.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-10.png" alt="">
+                                            </picture>
+                                            <p>神仙石碑(金)x1</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-11.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-11.png" alt="">
+                                            </picture>
+                                            <p>神仙石碑(銀)x1</p>
+                                        </td>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-12.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-12.png" alt="">
+                                            </picture>
+                                            <p>神仙石碑(銅)x1</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-13.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-13.png" alt="">
+                                            </picture>
+                                            <p>尚仁伺服器傳音秘笈x10</p>
+                                        </td>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-14.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-14.png" alt="">
+                                            </picture>
+                                            <p>熔岩的結晶x1</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-15.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-15.png" alt="">
+                                            </picture>
+                                            <p>笑笑背後靈x1</p>
+                                        </td>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-16.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-16.png" alt="">
+                                            </picture>
+                                            <p>壞壞背後靈x1</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-17.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-17.png" alt="">
+                                            </picture>
+                                            <p>黃鬼靈（金錢）7日x1</p>
+                                        </td>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-18.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-18.png" alt="">
+                                            </picture>
+                                            <p>黃鬼靈（升級）7日x1</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-19.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-19.png" alt="">
+                                            </picture>
+                                            <p>泰和神仙水(1日)x1</p>
+                                        </td>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-20.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-20.png" alt="">
+                                            </picture>
+                                            <p>泰和神仙水(2日)x1</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-21.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-21.png" alt="">
+                                            </picture>
+                                            <p>泰和神仙水(3日)x1</p>
+                                        </td>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-22.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-22.png" alt="">
+                                            </picture>
+                                            <p>古代組合裝備x2</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-23.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-23.png" alt="">
+                                            </picture>
+                                            <p>遺物組合裝備x1</p>
+                                        </td>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-24.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-24.png" alt="">
+                                            </picture>
+                                            <p>天柳衣（男）x1</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-25.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-25.png" alt="">
+                                            </picture>
+                                            <p>天柳衣（女）x1</p>
+                                        </td>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-26.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-26.png" alt="">
+                                            </picture>
+                                            <p>黑魂牌x1</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-27.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-27.png" alt="">
+                                            </picture>
+                                            <p>秘．特級假面箱x1</p>
+                                        </td>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-28.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-28.png" alt="">
+                                            </picture>
+                                            <p>秘．武器裝飾箱x1</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-29.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-29.png" alt="">
+                                            </picture>
+                                            <p>太和老君禮盒(男)x1</p>
+                                        </td>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-30.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-30.png" alt="">
+                                            </picture>
+                                            <p>太和老君禮盒(女)x1</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab_content" id="tab-2">
+                            <p class="pop_p">本區為個人獨享獎勵，可兌換為星光值</p>
+                            <div class="pop_content_box pop_box-2">
+                                <table class="table-1">
+                                        <td width="50%">
+                                            <picture>
+                                                <source src="imgp/icon/icon5-31.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-31.png" alt="">
+                                            </picture>
+                                            <p>合成保護咒x1</p>
+                                        </td>
+                                        <td width="50%">
+                                            <picture>
+                                                <source src="imgp/icon/icon5-32.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-32.png" alt="">
+                                            </picture>
+                                            <p>神秘六角箱x1</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-33.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-33.png" alt="">
+                                            </picture>
+                                            <p>白魂牌x1</p>
+                                        </td>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-34.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-34.png" alt="">
+                                            </picture>
+                                            <p>祝福隊伍石碑x1</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <picture>
+                                                <source src="imgp/icon/icon5-35.webp" type="image/webp" >
+                                                <img src="img/icon/icon5-35.png" alt="">
+                                            </picture>
+                                            <p>皇宮白櫃x1</p>
+                                        </td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="close btn btn_s">關閉</button>
+            </div>
+        </div>
+        <!-- 注意事項-->
+        <div class="popup" id="pop-4">
+            <div class="blacklayer"></div>
+            <div class="popbg popbg-3">
+                <div class="block_title_box ">
+                    <div class="block_title">注意事項</div>
+                </div>
+                <div class="pop_content_box pop_box-1">
+                    <ol>
+                        <li>本活動使用搞鬼點數進行購買。</li>
+                        <li>本活動商品為機率性商品，消費者購買或參與活動不代表即可獲得特定道具。</li>
+                        <li>隊長無法將已加入之隊員踢出隊伍，請謹慎保管您的隊伍邀請碼，本公司無法協助變更隊伍成員。</li>
+                        <li>本活動僅限隊長邀請隊員加入(任一帳號成功邀請隊員加入，即為隊長 )，若已加入隊伍將無法邀請隊員。</li>
+                        <li><span>本活動開始將無法變更隊員、退出隊伍，請特別注意。</span></li>
+                        <li>本活動除指定B區虛寶道具、閃耀之魂兌換獎勵、隊伍消費回饋為組隊成員共同取得，活動道具皆為各帳號取得，無法轉讓、贈與他人。</li>
+                        <li>本活動A區指定虛寶道具，經變更為「星光值」後，將無法反悔，亦無法要求重新發放、領取。</li>
+                        <li>本活動「閃耀之魂」僅限使用於本次活動兌換，且僅能為「隊長」進行獎勵兌換。</li>
+                        <li>本活動「閃耀之魂」若於活動結束後未兌換完畢，將無法變更為虛寶道具、現金，亦無法要求重新開放兌換。</li>
+                        <li>本活動頁面將於活動截止後關閉，請玩家務必於活動期間內領取完畢，結束後將不開放重新領取。</li>
+                        <li>隊伍消費回饋為全隊共同累積 ，達指定額度後，系統將自動發放獎勵於全隊成員，隊伍成員可前往「領獎專區」查詢。</li>
+                        <li><span>隊伍消費回饋僅限於本活動中消費累積</span>，於搞鬼商城及搞鬼網頁商城消費，無法累積消費額度。</li>
+                        <li>本活動之獎勵將無法交易，請慎選領取道具角色，若使用錯誤角色領取，恕不提供轉移服務。</li>
+                        <li>本活動獎勵將於領取後的30分鐘內，發放至帳號內的禮物盒中。</li>
+                        <li>本活動僅限電腦版領取，若使用手機版登入活動頁面，導致無法領取獎勵述不補發。</li>
+                        <li>本活動之虛寶將無法折換現金或其他等值商品。</li>
+                        <li>本公司有權檢視各參加者之活動參與行為及得獎情形是否涉嫌例：人為操作、惡意灌票、蓄意偽造、多開（重）帳號、短時間異常多筆參與行為、透過任何電腦程式參與活動、詐欺、任何違反會員系統服務合約及停權管理規章之情事者，或以任何其他不正當的方式意圖以進行不實或虛偽活動參與行為，參賽者因上述情形所獲得之活動資格及獎項，本公司得一概取消之，其帳號亦將停權處份。</li>
+                        <li>玩家參與本活動之同時，即同意接受本活動辦法與注意事項之規範，如不同意或有違反，應視為無參加資格 ，或本公司得取消其使用資格，如因此有致生損害於本公司或其他任何第三人，本公司得向參加者請求損害賠償，參加者應負一切相關責任。</li>
+                        <li>掘夢網保留變更、取消或終止本活動的權利，包括但不限於本活動條款及活動辦法。</li>
+                    </ol>
+                </div>
+                <button class="close btn btn_s">關閉</button>
+            </div>
+        </div>
+        <!-- 活動說明-->
+        <div class="popup" id="pop-3">
+            <div class="blacklayer"></div>
+            <div class="popbg popbg-3">
+                <div class="block_title_box">
+                    <div class="block_title">活動說明</div>
+                </div>
+                <div class="pop_content_box pop_box-1">
+                    <ol>
+                        <li>（隊長）活動流程：<br>登入帳號 → 複製邀請碼 → 邀請訓練生 → 隊長認證 → 領取獎勵，開始共享轉蛋。</li>
+                        <li>（訓練生）活動流程：輸入隊長的邀請碼 → 等待隊長認證。
+                            <ul>
+                                <li><span>‧完成組隊後，將無法變更組隊成員，請特別留意。</span></li>
+                                <li><span>‧隊伍中的「所有訓練生」，依據「隊長」與「訓練生」，獲得活動獎勵。</span></li>
+                            </ul>
+                        </li>
+                        <li>每次抽取共享轉蛋時，將隨機獲得「星光值」並累積至「閃耀之魂」，當「星光值」累積至100%時，可兌換限定虛寶。</li>
+                        <li>每兌換1次「閃耀之魂」內的獎勵，星光值將會歸零重新計算。</li>
+                        <li>「共享轉蛋」中，凡抽中「指定A區道具」，可選擇「領取獎勵」或「回收變為星光值」</li>
+                        <li>「共享轉蛋」中，「指定B區道具」、「隊伍消費回饋」、「閃耀之魂兌換獎勵」均為隊伍成員共享。</li>
+                        <li>每回收1個「指定A區道具」為「星光值」時，可獲得1%的星光值。</li>
+                        <li>每次抽取（含：抽1次、抽10次）「共享轉蛋」時，均會隨機獲得「星光值」。<br><span>「抽10次」獲得的基本星光值較「抽1次」來的高。</span></li>
+                        <li> 「閃耀之魂兌換獎勵」，僅限「隊長」進行兌換，兌換後全隊隊員均可獲得獎勵。</li>
+                        <li>「隊伍消費回饋」為全隊共同目標，累積消費達指定額度後，全隊隊員均可獲得回饋獎勵。</li>
+                    </ol>
+                </div>
+                <button class="close btn btn_s">關閉</button>
+            </div>
+        </div>
+        <!-- 雙按鈕系統提示-->
+        <div class="popup" id="pop-2">
+            <div class="blacklayer"></div>
+            <div class="popbg popbg-1">
+                <div class="pop_content_box">
+                    <p>確認退出隊伍?</p>
+                </div>
+                <div class="pop_btn_box">
+                    <!-- 點擊確認後出現確認的單按鈕系統提示 -->
+                    <button class="checked btn btn_s" data-pop="pop-1">確定</button>
+                    <button class="close btn btn_s">取消</button>
+                </div>
+            </div>
+        </div>
+        <!-- 單按鈕系統提示 -->
+        <div class="popup" id="pop-1">
+            <div class="blacklayer"></div>
+            <div class="popbg popbg-1">
+                <div class="pop_content_box">
+                    <p>請先完成星光Ghost STAR!驗證再進行共享轉蛋</p>
+                </div>
+                <button class="close btn btn_s">確定</button>
+                <div class="notice_dec_1"></div>
+                <div class="notice_dec_2"></div>
+            </div>
+        </div>
+        <div class="bg-img">
+            <div class="p2_man"></div>
+            <!-- top-bar -->
+            <div class="top-bar">
+                <div class="top-container">
+                    <div class="logo"></div>
+                    <div class="link-block">
+                        <a  href="https://www.digeam.com/register" target="_blank">快 ! 註冊</a>
+                        <a  href="https://go.digeam.com/download/" target="_blank">下載專區</a>
+                        <a  href="https://go.digeam.com/intro/20210322/">回四週年活動專區</a>
+                    </div>
+                </div>
+            </div>
+            <!-- title -->
+            <div class="title_box"></div>
+            <!-- all_block -->
+            <div class="block_box">
+                <!-- 跑馬燈 -->
+                <div class="marquee">
+                    <div class="loudspeaker"></div>
+                    <div class="marquee-block">
+                        <div class="marquee-inner block_content">
+                            <span>1恭喜!1324567890123456抽中OOO道具! &nbsp;&nbsp;&nbsp;</span>
+                            <span>2恭喜!1234567890123456抽中OOO道具! &nbsp;&nbsp;&nbsp;</span>
+                            <span>3恭喜!1234567890123456抽中OOO道具! &nbsp;&nbsp;&nbsp;</span>
+                            <span>4哇！哇！哇！哇！哇！哇！1234567890123456 &nbsp;&nbsp;&nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- block-1 四周年限定活動 -->
+                <div class="block block-1">
+                    <div class="block_content_box">
+                        <div class="block-1_title">
+                            <div class="block_title-1">歡迎!完成星光Ghost STAR!認證的訓練生!</div>
+                        </div>
+                        <div class="block-1_flex">
+                            <p class="block_content" style="text-align: left;">「週年限定活動：共享轉蛋」，內含限量「太和老君」。​<br>
+                                活動期間內，凡抽取「共享轉蛋」，即可累積「星光值」，​累積「星光值」達100%即可兌換豐厚獎勵！同時所有星光值兌換的獎勵都是「 <span>隊伍全員共享 </span>」！​</p>
+                            <div class="function_box">
+                                <div class="function">
+                                    <p class="small_icon star">你的帳號</p>
+                                    <input type="text" name="玩家帳戶" value="1234567890123456"  class="input">
+                                    <button class="btn btn_s">登入</button>
+                                </div>
+                                <div class="function">
+                                    <p class="small_icon star">持有點數</p>
+                                    <input type="text" name="持有點數" value="25025"  class="input">
+                                    <a href="https://www.digeam.com/member/billing" target="_blank" rel="noopener noreferrer"><button class="btn btn_s">儲值中心</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- block-2 共享轉蛋區 -->
+                <div class="block-2">
+                    <div class="content_flex">
+                        <div class="gift_box">
+                            <div class="gift_top"></div>
+                            <div class="gift_bottom"></div>
+                            <div class="gift_star_box">
+                                <div class="gift_star"></div>
+                            </div>
+                            <div class="draw_content_box">
+                                <picture>
+                                    <source src="imgp/p2_block-2_title-1.webp" type="image/webp" >
+                                    <img class="draw_title" src="img/p2_block-2_title-1.png" alt="">
+                                </picture>
+                                <div class="draw_word">
+                                    <button class="btn btn_s pop-btn" data-pop="pop-5">內容物查詢</button>
+                                </div>
+                                <div class="hover gift_hover">
+                                    <p>A區獎勵 – 個人獨享​<br>B區獎勵 – 隊伍共享​<br>10連抽獲得的星光值，較單抽高。​</p>
+                                </div>
+                                <div class="draw_btn_box">
+                                    <button class="draw_btn pop-btn" data-pop="pop-6">抽1次<br>NT$99</button>
+                                    <button class="draw_btn pop-btn" data-pop="pop-6">抽10次<br>NT$990</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trophy_box">
+                            <div class="draw_content_box">
+                                <picture>
+                                    <source src="imgp/p2_block-2_title-2.webp" type="image/webp" >
+                                    <img class="draw_title" src="img/p2_block-2_title-2.png" alt="">
+                                </picture>
+                                <div class="draw_word">
+                                    <p>當前星光值<br><span>100</span>%</p>
+                                </div>
+                                <div class="hover trophy_hover">
+                                    <p>抽取共享轉蛋可累積閃耀之魂星光值，<br>累積達100%可兌換限定獎勵。​<br>每完成1次兌換，星光值歸零重計。​​</p>
+                                </div>
+                                <!-- 如果當前星光值累計到100%，則加上 exchange_btn_100的class -->
+                                <div class="exchange_btn_box">
+                                    <button class="exchange_btn exchange_btn_100 pop-btn" data-pop="pop-8">滿魂兌換</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block3_4">
+                    <!-- block-3 你的隊伍 -->
+                    <div class="block block-3">
+                        <div class="block_content_box">
+                            <div class="block_title_box">
+                                <div class="block_title">你的隊伍</div>
+                            </div>
+                            <div class="function_box block-2_function">
+                                <div class="function">
+                                    <p class="small_icon leader">隊長</p>
+                                    <input type="text" name="玩家帳戶"value="1234567890123456" class="input">
+                                </div>
+                                <div class="function">
+                                    <p class="small_icon member">隊員</p>
+                                    <input type="text" name="玩家帳戶" value="1234567890123456" class="input">
+                                </div>
+                                <div class="function">
+                                    <p class="small_icon member">隊員</p>
+                                    <input type="text" name="玩家帳戶" value="1234567890123456" class="input">
+                                </div>
+                            </div>
+                            <p class="block_content">隊伍累計消費<span>99999</span>點</p>
+                        </div>
+                    </div>
+                    <!-- block-4 各式功能按鈕區 -->
+                    <div class="block-4">
+                        <div class="block_content_box">
+                            <div class="content_flex">
+                                <div class="flex_L">
+                                    <button class="award_area_btn pop-btn" data-pop="pop-9">領獎專區</button>
+                                </div>
+                                <div class="flex_R block-4_flex_R">
+                                    <button class="btn btn_s pop-btn" data-pop="pop-3">活動說明</button>
+                                    <button class="btn btn_s pop-btn" data-pop="pop-10">隊伍消費回饋</button>
+                                    <button class="btn btn_s pop-btn" data-pop="pop-4">注意事項</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------------Footer---------------------->
+        <div class="footer">
+            <div class="footerwrap">
+                <div class="logo-container">
+                    <a href="https://www.digeam.com/" target="_blank" class="digeam-logo">DiGeam</a>
+                    <a class="mgame"></a>
+                </div>
+                <div class="dgcopy-container">
+    
+                    <p class="dg-name">掘夢網股份有限公司 © <span id="getyear"></span></p>
+                    <!----------------------年份運算---------------------->
+                    <script type="text/javascript">
+                        var ndate = new Date();
+                        var nyear = ndate.getFullYear();
+                        document.getElementById("getyear").innerHTML = nyear;
+                    </script>
+    
+                    <p class="dg-copyright">Copyright © DiGeam Corporation. All Rights Reserved.</p>
+    
+                    <div class="dg-mail">客服信箱: <a href="https://www.digeam.com/cs" target="_blank">www.digeam.com/cs</a> | 官方網站: <a href="https://www.digeam.com" target="_blank">www.digeam.com</a></div>
+                </div>
+                <div class="grade">
+                    <img src="img/footer/12plus.png">
+                    <ul>
+                        <li>本遊戲為免費使用，部分內容涉及暴力情節。</li>
+                        <li>遊戲內另提供購買虛擬遊戲幣、物品等付費服務。</li>
+                        <li>請注意遊戲時間，避免沉迷。</li>
+                        <li style="color: #e5be7b;">本遊戲服務區域包含台灣、香港、澳門。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
